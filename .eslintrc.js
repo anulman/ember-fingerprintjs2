@@ -16,6 +16,9 @@ module.exports = {
   },
   rules: {
   },
+  globals: {
+    Fingerprint2: true
+  },
   overrides: [
     // node files
     {
