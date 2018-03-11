@@ -23,6 +23,8 @@ module.exports = {
       destDir: 'fingerprintjs2'
     });
 
-    return mergeTrees([vendorTree, fingerprintjsTree]);
+    return vendorTree !== undefined ?
+      mergeTrees([vendorTree, fingerprintjsTree]) :
+      fingerprintjsTree;
   }
 };
